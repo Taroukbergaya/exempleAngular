@@ -1,0 +1,6 @@
+{
+  "contacts": [
+    { "id": 1, "nom": "tarek", "email": "benrgayatarek@gmail.com", "msg": "hello"},
+    { "id": 2, "nom": "foulen", "email": "benfoulen@gmail.com", "msg": "hi"}
+  ]
+}

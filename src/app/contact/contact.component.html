@@ -1,0 +1,29 @@
+<h1>contact me </h1>
+<form #f="ngForm" (ngSubmit)="save(f)">
+    <div>
+        <label>votre nom</label>
+        <input name="nom" type="text" required ngModel  #n="ngModel">
+    </div>
+    <div *ngIf="n.invalid && n.touched" >
+        le champ nom est obligatoire
+
+    </div>
+    <div>
+        <label>votre Email</label>
+        <input name="email" type="text"  required ngModel  #e="ngModel">
+    </div>
+    <div *ngIf="e.invalid && e.touched" >
+        le email  est obligatoire
+
+    </div>
+    <div >
+        <label>votre message</label>
+        <input name="msg" type="text" required ngModel #m="ngModel">
+    </div>
+    <div *ngIf="m.invalid && m.touched" >
+        le champ msg est obligatoire
+
+    </div>
+    <button [disabled]="f.invalid" type="submit">save</button>
+</form>
+

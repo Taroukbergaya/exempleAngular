@@ -1,0 +1,13 @@
+<h1>Liste contacts</h1>
+<div class="row">
+<div class="card" style="width: 18rem;">
+    <div *ngFor="let c of listContact">
+    <div class="card-body">
+        <p class="card-text"> nom : {{ c.nom }}</p>
+      <p class="card-text"> emai : {{ c.email }}</p>
+      <p class="card-text"> msg :{{ c.msg }}</p>
+      
+    </div>
+    </div>
+  </div>
+</div>
